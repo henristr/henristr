@@ -66,3 +66,54 @@ body {
   font-family: Josefin Sans;
   font-size: 80px;
 }
+.social-github {
+  font-family: "Open Sans";
+  font-size: 16px;
+  text-align: center;
+  color: #08872b;
+}
+.social-title-git {
+  font-family: Josefin Sans;
+  font-size: 80px;
+  color: #101411;
+}
+.social-title-hub {
+  font-family: Nineties;
+  margin-top: -55px;
+  font-size: 80px;
+  color: #909692;
+}
+.social-github-description {
+  margin-top: -35px;
+}
+.social-insta {
+  font-family: "Open Sans";
+  font-size: 16px;
+  text-align: center;
+  color: #08872b;
+}
+.social-title-insta-fade {
+  background: linear-gradient(
+    90deg,
+    rgba(86, 88, 211, 1) 0%,
+    rgba(149, 40, 189, 1) 25%,
+    rgba(209, 39, 116, 1) 50%,
+    rgba(245, 127, 36, 1) 75%,
+    rgba(251, 219, 122, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.social-title-insta {
+  font-family: Josefin Sans;
+  font-size: 80px;
+}
+.social-title-gram {
+  font-family: Nineties;
+  margin-top: -55px;
+  font-size: 80px;
+}
+.social-insta-description {
+  margin-top: -35px;
+}

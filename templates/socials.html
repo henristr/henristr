@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Henri Stricker | Social</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='index.css') }}"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <img
+        class="header-logo"
+        src="{{ url_for('static', filename='/images/henristr.png') }}"
+        alt="img"
+        height="20px"
+      />
+      <span>Henri Stricker</span>
+      <div class="header-links">
+        <a href="/">Home</a>
+        <span>|</span>
+        <a href="/projects">Projects</a>
+        <span>|</span>
+        <a href="/socials">Social</a>
+      </div>
+    </div>
+    <div class="main-title">
+      <h1 class="main-title-social">Social</h1>
+    </div>
+    <div class="social-github">
+      <a href="https://github.com/henristr.de">
+        <h1 class="social-title-git">Git</h1>
+        <h1 class="social-title-hub">Hub</h1>
+      </a>
+      <p class="social-github-description">henristr - GitHub</p>
+    </div>
+    <div class="social-insta">
+      <a href="https://instagram.com/henristr__">
+        <h1 class="social-title-insta social-title-insta-fade">Insta</h1>
+        <h1 class="social-title-gram social-title-insta-fade">gram</h1>
+      </a>
+      <p class="social-insta-description social-title-insta-fade">
+        henristr__ - Instagram
+      </p>
+    </div>
+  </body>
+</html>
