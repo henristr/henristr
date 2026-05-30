@@ -2,13 +2,13 @@ a {
   text-decoration: none;
 }
 .header {
-  color: #53ca59;
+  color: #212427;
   display: flex;
   font-family: Open Sans;
   font-weight: bold;
 }
 .header a {
-  color: #368339;
+  color: #191919;
   padding: 10px;
 }
 .header-links {
@@ -29,7 +29,7 @@ body {
   font-family: "Josefin Sans";
   font-size: 32px;
   text-align: center;
-  color: #1ac59a;
+  color: #212a37;
 }
 .main-title-henri {
   font-family: Josefin Sans;
@@ -46,18 +46,18 @@ body {
   font-family: "Open Sans";
   font-size: 16px;
   text-align: center;
-  color: #3ccee9;
+  color: #014f86;
 }
 .project-title-smart {
   font-family: Josefin Sans;
   font-size: 80px;
-  color: #61a2f4;
+  color: #014f86;
 }
 .project-title-fridge {
   font-family: Nineties;
   margin-top: -55px;
   font-size: 80px;
-  color: #3ccee9;
+  color: #2c7da0;
 }
 .project-smartfridge-description {
   margin-top: -35px;
