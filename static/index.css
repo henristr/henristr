@@ -22,17 +22,16 @@ body {
 }
 @font-face {
   font-family: Nineties;
-  src: url(fonts/NinetiesDisplay.otf);
+  src: url("/static/fonts/NinetiesDisplay.otf");
 }
 .main-title {
   padding-top: 50px;
-  font-family: "Josefin Sans";
+
   font-size: 32px;
   text-align: center;
   color: #212a37;
 }
 .main-title-henri {
-  font-family: Josefin Sans;
   font-size: 80px;
 }
 .main-title-stricker {
@@ -49,7 +48,6 @@ body {
   color: #014f86;
 }
 .project-title-smart {
-  font-family: Josefin Sans;
   font-size: 80px;
   color: #014f86;
 }
@@ -63,7 +61,6 @@ body {
   margin-top: -35px;
 }
 .main-title-social {
-  font-family: Josefin Sans;
   font-size: 80px;
 }
 .social-github {
@@ -73,7 +70,6 @@ body {
   color: #08872b;
 }
 .social-title-git {
-  font-family: Josefin Sans;
   font-size: 80px;
   color: #101411;
 }
@@ -106,7 +102,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .social-title-insta {
-  font-family: Josefin Sans;
   font-size: 80px;
 }
 .social-title-gram {
