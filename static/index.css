@@ -1,14 +1,20 @@
 a {
   text-decoration: none;
 }
+h1 {
+  font-family: Mirava;
+}
+p {
+  font-family: Poppins;
+}
 .header {
-  color: #212427;
+  color: #40415d;
   display: flex;
-  font-family: Open Sans;
+  font-family: Mirava;
   font-weight: bold;
 }
 .header a {
-  color: #191919;
+  color: #55577b;
   padding: 10px;
 }
 .header-links {
@@ -19,17 +25,26 @@ a {
 }
 body {
   background-image: url(images/background.svg);
+  background-size: cover;
 }
 @font-face {
   font-family: Nineties;
   src: url("/static/fonts/NinetiesDisplay.otf");
+}
+@font-face {
+  font-family: Mirava;
+  src: url("/static/fonts/Mirava-Regular.otf");
+}
+@font-face {
+  font-family: Poppins;
+  src: url("/static/fonts/Poppins-Black.ttf");
 }
 .main-title {
   padding-top: 50px;
 
   font-size: 32px;
   text-align: center;
-  color: #212a37;
+  color: #40415d;
 }
 .main-title-henri {
   font-size: 80px;
