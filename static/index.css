@@ -3,6 +3,7 @@ a {
 }
 h1 {
   font-family: Mirava;
+  font-size: 80px;
 }
 p {
   font-family: Poppins;
@@ -27,6 +28,20 @@ body {
   background-image: url(images/background.svg);
   background-size: cover;
 }
+@media (orientation: portrait) {
+  body {
+    background-image: url(images/background-mobile.svg);
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 393px) {
+  .header {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 70px;
+  }
+}
 @font-face {
   font-family: Nineties;
   src: url("/static/fonts/NinetiesDisplay.otf");
@@ -41,18 +56,12 @@ body {
 }
 .main-title {
   padding-top: 50px;
-
-  font-size: 32px;
   text-align: center;
   color: #40415d;
-}
-.main-title-henri {
-  font-size: 80px;
 }
 .main-title-stricker {
   font-family: Nineties;
   margin-top: -55px;
-  font-size: 80px;
 }
 
 .project-smartfridge {
@@ -63,20 +72,16 @@ body {
   color: #014f86;
 }
 .project-title-smart {
-  font-size: 80px;
   color: #014f86;
 }
 .project-title-fridge {
   font-family: Nineties;
   margin-top: -55px;
-  font-size: 80px;
+
   color: #2c7da0;
 }
 .project-smartfridge-description {
   margin-top: -35px;
-}
-.main-title-social {
-  font-size: 80px;
 }
 .social-github {
   font-family: "Open Sans";
@@ -85,13 +90,11 @@ body {
   color: #08872b;
 }
 .social-title-git {
-  font-size: 80px;
   color: #101411;
 }
 .social-title-hub {
   font-family: Nineties;
   margin-top: -55px;
-  font-size: 80px;
   color: #909692;
 }
 .social-github-description {
@@ -116,13 +119,9 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.social-title-insta {
-  font-size: 80px;
-}
 .social-title-gram {
   font-family: Nineties;
   margin-top: -55px;
-  font-size: 80px;
 }
 .social-insta-description {
   margin-top: -35px;
