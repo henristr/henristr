@@ -22,8 +22,11 @@ p {
   padding-left: 20px;
 }
 .header-logo {
+  position: relative;
+}
+.header-logo-link {
+  display: inline-block;
   margin-left: -9px;
-  display: block;
   margin-top: -11px;
 }
 body {
@@ -42,6 +45,9 @@ body {
   }
   .header-links {
     padding-left: 12px;
+  }
+  .header-logo-link {
+    margin-top: -13px;
   }
   h1 {
     font-size: 70px;
