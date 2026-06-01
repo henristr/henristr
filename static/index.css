@@ -22,7 +22,9 @@ p {
   padding-left: 20px;
 }
 .header-logo {
-  padding-right: 5px;
+  margin-left: -9px;
+  display: block;
+  margin-top: -11px;
 }
 body {
   background-image: url(images/background.svg);
@@ -37,6 +39,9 @@ body {
 @media only screen and (max-width: 393px) {
   .header {
     font-size: 14px;
+  }
+  .header-links {
+    padding-left: 12px;
   }
   h1 {
     font-size: 70px;
