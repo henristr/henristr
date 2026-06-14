@@ -1,42 +1,13 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Henri Stricker | Projects</title>
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='index.css') }}"
-    />
-  </head>
-  <body>
-    <div class="header">
-      <a href="https://homarr.home" class="header-logo-link">
-        <img
-          class="header-logo"
-          src="{{ url_for('static', filename='/images/henristr.png') }}"
-          alt="img"
-          height="20px"
-        />
-      </a>
-      <span>Henri Stricker</span>
-      <div class="header-links">
-        <a href="/">Home</a>
-        <span>|</span>
-        <a href="/projects">Projects</a>
-        <span>|</span>
-        <a href="/socials">Social</a>
-      </div>
-    </div>
-    <div class="project-smartfridge">
-      <a href="https://smartfridge.henristr.de">
-        <h1 class="project-title-smart">Smart</h1>
-        <h1 class="project-title-fridge">Fridge</h1>
-      </a>
-      <p class="project-smartfridge-description">
-        A simple open-source fridge management tool for self-hosters with AI
-        integration.
-      </p>
-    </div>
-  </body>
-</html>
+{% extends "base.html" %} {% block content %}
+
+<div class="project-smartfridge">
+  <a href="https://smartfridge.henristr.de">
+    <h1 class="project-title-smart">Smart</h1>
+    <h1 class="project-title-fridge">Fridge</h1>
+  </a>
+  <p class="project-smartfridge-description">
+    A simple open-source fridge management tool for self-hosters with AI
+    integration.
+  </p>
+</div>
+{% endblock %}

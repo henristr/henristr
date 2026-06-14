@@ -137,3 +137,48 @@ body {
 .social-insta-description {
   margin-top: -35px;
 }
+.markdown-content {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  color: #40415d;
+}
+
+.markdown-content h1 {
+  font-family: Mirava;
+  font-size: 60px;
+  text-align: center;
+}
+
+.markdown-content h2 {
+  font-family: Mirava;
+  font-size: 35px;
+  color: #55577b;
+  margin-top: 40px;
+}
+
+.markdown-content p {
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.markdown-content a {
+  color: #014f86;
+  text-decoration: none;
+}
+
+.markdown-content code {
+  background: #f3f4f6;
+  padding: 3px 6px;
+  border-radius: 6px;
+  font-family: monospace;
+}
+
+.markdown-content pre {
+  background: #1e1e2e;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  overflow-x: auto;
+}
