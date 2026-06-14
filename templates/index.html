@@ -1,8 +1,44 @@
-{% extends "base.html" %} {% block content %}
-
-<div class="main-title">
-  <h1 class="main-title-henri">Henri</h1>
-  <h1 class="main-title-stricker">Stricker</h1>
-</div>
-
-{% endblock %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Henri Stricker. SmartFridge. FridgeAssistant. JugendForscht"
+    />
+    <title>Henri Stricker | Home | SmartFridge Dev | Student | Germany</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='index.css') }}"
+    />
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <a href="https://homarr.home" class="header-logo-link">
+        <img
+          class="header-logo"
+          src="{{ url_for('static', filename='/images/henristr.png') }}"
+          alt="img"
+          height="20px"
+        />
+      </a>
+      <span>Henri Stricker</span>
+      <div class="header-links">
+        <a href="/">Home</a>
+        <span>|</span>
+        <a href="/projects">Projects</a>
+        <span>|</span>
+        <a href="/socials">Social</a>
+      </div>
+    </div>
+    <div class="main-title">
+      <h1 class="main-title-henri">Henri</h1>
+      <h1 class="main-title-stricker">Stricker</h1>
+    </div>
+  </body>
+</html>
