@@ -13,16 +13,24 @@ def md(page):
     if not file.exists():
         abort(404)
 
+    content = file.read_text(encoding="utf-8")
+
     title = page
 
+    for line in content.splitlines():
+        if line.startswith("# "):
+            title = line[2:].strip()
+            break
+
     html = markdown(
-        file.read_text(encoding="utf-8"),
-            extensions=["fenced_code", "tables"]
+        content,
+        extensions=["fenced_code", "tables"]
     )
+
     return render_template(
         "markdown_page.html",
         content=html,
-        title = title
+        title=title
     )
 
 @app.route("/")
