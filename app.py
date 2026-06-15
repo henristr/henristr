@@ -1,6 +1,29 @@
-from flask import Flask, render_template, send_from_directory
+from flask import Flask, render_template, send_from_directory, abort
+from markdown import markdown
+from pathlib import Path
 
 app = Flask(__name__)
+
+PAGES_DIR = Path("pages")
+
+@app.route("/<page>")
+def md(page):
+    file = PAGES_DIR / f"{page}.md"
+
+    if not file.exists():
+        abort(404)
+
+    title = page
+
+    html = markdown(
+        file.read_text(encoding="utf-8"),
+            extensions=["fenced_code", "tables"]
+    )
+    return render_template(
+        "markdown_page.html",
+        content=html,
+        title = title
+    )
 
 @app.route("/")
 def index():
