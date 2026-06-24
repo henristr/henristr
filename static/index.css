@@ -137,3 +137,37 @@ body {
 .social-insta-description {
   margin-top: -35px;
 }
+.social-codeberg {
+  font-family: "Open Sans";
+  font-size: 16px;
+  text-align: center;
+  color: #0b3049;
+}
+.social-title-code {
+  color: #2185d0;
+}
+.social-title-berg {
+  font-family: Nineties;
+  margin-top: -55px;
+  color: #b5ddff;
+}
+.social-codeberg-description {
+  margin-top: -35px;
+}
+.social-forgejo {
+  font-family: "Open Sans";
+  font-size: 16px;
+  text-align: center;
+  color: #0b3049;
+}
+.social-title-forgejo {
+  color: #f97316;
+}
+.social-title-server {
+  font-family: Nineties;
+  margin-top: -55px;
+  color: #d50000;
+}
+.social-forgejo-description {
+  margin-top: -35px;
+}
