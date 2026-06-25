@@ -8,11 +8,17 @@ h1 {
 p {
   font-family: Poppins;
 }
+html {
+  scroll-behavior: smooth;
+}
 .header {
   color: #40415d;
   display: flex;
   font-family: Mirava;
   font-weight: bold;
+  position: sticky;
+  top: 8px;
+  z-index: 100;
 }
 .header a {
   color: #55577b;
