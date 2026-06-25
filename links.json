@@ -10,5 +10,9 @@
     {
         "path": "github",
         "url": "https://github.com/henristr"
+    },
+    {
+        "path": "smartfridge",
+        "url": "https://opensmartfridge.de"
     }
 ]
