@@ -3,6 +3,10 @@
         "path": "wishes", 
         "url": "https://wishlist.henristr.de" 
     },
+    { 
+        "path": "wishlist", 
+        "url": "https://wishlist.henristr.de" 
+    },
     {
         "path": "bob-talks", 
         "url": "https://docs.henristr.de/share/g3gana0gho/p/bob-talks-NMWlsDjlzT"
