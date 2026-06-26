@@ -18,5 +18,9 @@
     {
         "path": "smartfridge",
         "url": "https://opensmartfridge.de"
+    },
+    {
+	"path": "bob-talks-files",
+	"url": "https://cloud.henristr.de/share/QXaN5niV"
     }
 ]
