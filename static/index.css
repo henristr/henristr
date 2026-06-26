@@ -71,6 +71,14 @@ body {
   font-family: Poppins;
   src: url("/static/fonts/Poppins-Black.ttf");
 }
+@font-face {
+  font-family: Inter;
+  src: url("/static/fonts/Inter_18pt-Black.ttf");
+}
+@font-face {
+  font-family: Inter Bold;
+  src: url("/static/fonts/Inter_18pt-Bold.ttf");
+}
 .main-title {
   padding-top: 50px;
   text-align: center;
@@ -80,7 +88,6 @@ body {
   font-family: Nineties;
   margin-top: -55px;
 }
-
 .project-smartfridge {
   padding-top: 50px;
   font-family: "Open Sans";
