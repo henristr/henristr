@@ -24,6 +24,14 @@ html {
   color: #55577b;
   padding: 10px;
 }
+.header-name {
+  color: #40415d;
+  padding: 0px;
+  display: inline-block;
+  margin-left: -10px;
+  margin-top: -9px;
+  margin-right: -8px;
+}
 .header-links {
   padding-left: 20px;
 }
@@ -43,6 +51,9 @@ body {
   body {
     background-image: url(images/background-mobile.svg);
     background-size: cover;
+  }
+  .header-links {
+    margin-top: 1.75px;
   }
 }
 @media only screen and (max-width: 393px) {
