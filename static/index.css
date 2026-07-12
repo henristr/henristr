@@ -71,8 +71,8 @@ footer {
   padding-right: 5px;
 }
 #title {
-  display: flex;
-  justify-content: center;
+  text-align: center;
+  margin: 0;
 }
 #hstr-img {
   height: 30px;
@@ -87,8 +87,8 @@ footer {
 }
 #smartfridge-img {
   display: block;
-  margin: 0 auto;
   width: 200px;
+  margin-left: 20px;
 }
 #smartfridge {
   display: flex;
@@ -101,6 +101,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .project-text a {
   display: block;
@@ -114,6 +115,9 @@ footer {
 @media only screen and (max-width: 450px) {
   #smartfridge {
     flex-direction: column;
+  }
+  #smartfridge-img {
+    margin-left: 0;
   }
 }
 @font-face {
