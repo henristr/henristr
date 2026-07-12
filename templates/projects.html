@@ -3,42 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Henri Stricker | Projects</title>
+    <title>Henri Stricker | Home | SmartFridge Dev | Student | Germany</title>
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='index.css') }}"
     />
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+    />
   </head>
   <body>
-    <div class="header">
-      <a href="https://homarr.home" class="header-logo-link">
+    <header>
+      <a class="header-main" href="/">
         <img
-          class="header-logo"
-          src="{{ url_for('static', filename='/images/henristr.png') }}"
-          alt="img"
-          height="20px"
+          src="{{ url_for('static', filename='images/henristr.png') }}"
+          alt="hstr-img"
+          id="hstr-img"
         />
+        <h3 id="header-title">Henri Stricker</h3>
       </a>
-      <a href="/" class="header-name">
-        <span>Henri Stricker</span>
-      </a>
-      <div class="header-links">
-        <a href="/">Home</a>
-        <span>|</span>
+      <span class="links">
         <a href="/projects">Projects</a>
         <span>|</span>
         <a href="/socials">Social</a>
+        <span>|</span>
+        <a href="/github">GitHub</a>
+      </span>
+    </header>
+    <main>
+      <div id="smartfridge">
+        <div class="project-text">
+          <h1 id="title">SmartFridge</h1>
+          <a href="https://opensmartfridge.de">Try it out!</a>
+        </div>
+        <img
+          src="{{ url_for('static', filename='images/smartfridge.png') }}"
+          alt=""
+          id="smartfridge-img"
+        />
       </div>
-    </div>
-    <div class="project-smartfridge">
-      <a href="https://smartfridge.henristr.de">
-        <h1 class="project-title-smart">Smart</h1>
-        <h1 class="project-title-fridge">Fridge</h1>
-      </a>
-      <p class="project-smartfridge-description">
-        A simple open-source fridge management tool for self-hosters with AI
-        integration.
-      </p>
-    </div>
+    </main>
+    <footer>&copy; Henri Stricker {{ year }}</footer>
   </body>
 </html>
