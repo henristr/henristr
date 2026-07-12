@@ -2,6 +2,7 @@ from flask import Flask, render_template, send_from_directory, abort, redirect
 from markdown import markdown
 from pathlib import Path
 import json
+import datetime
 
 app = Flask(__name__)
 
@@ -40,6 +41,12 @@ def md(page):
         title=title
     )
 
+from datetime import datetime
+
+@app.context_processor
+def inject_year():
+    return {'year': datetime.now().year}
+
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -59,6 +66,10 @@ def projects():
 @app.route("/socials")
 def socials():
     return render_template("socials.html")
+
+@app.route("/github")
+def github():
+    return redirect("https://github.com/henristr")
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=1313)

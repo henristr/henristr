@@ -3,10 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Henri Stricker. SmartFridge. FridgeAssistant. JugendForscht"
-    />
     <title>Henri Stricker | {{ title }}</title>
     <link
       rel="stylesheet"
@@ -18,27 +14,26 @@
     />
   </head>
   <body>
-    <div class="header">
-      <a href="https://homarr.home" class="header-logo-link">
+    <header>
+      <a class="header-main" href="/">
         <img
-          class="header-logo"
-          src="{{ url_for('static', filename='/images/henristr.png') }}"
-          alt="img"
-          height="20px"
+          src="{{ url_for('static', filename='images/henristr.png') }}"
+          alt="hstr-img"
+          id="hstr-img"
         />
+        <h3 id="header-title">Henri Stricker</h3>
       </a>
-      <a href="/" class="header-name">
-        <span>Henri Stricker</span>
-      </a>
-      <div class="header-links">
-        <a href="/">Home</a>
-        <span>|</span>
+      <span class="links">
         <a href="/projects">Projects</a>
         <span>|</span>
         <a href="/socials">Social</a>
-      </div>
-    <div class="=markdown_content">
-        {{ content|safe }}
-    </div>
+        <span>|</span>
+        <a href="/github">GitHub</a>
+      </span>
+    </header>
+    <main>
+      <div class="=markdown_content">{{ content|safe }}</div>
+    </main>
+    <footer>&copy; Henri Stricker {{ year }}</footer>
   </body>
 </html>

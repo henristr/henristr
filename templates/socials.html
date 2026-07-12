@@ -3,65 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Henri Stricker | Social</title>
+    <title>Henri Stricker | Socials</title>
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='index.css') }}"
     />
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='favicon.ico') }}"
+    />
   </head>
   <body>
-    <div class="header">
-      <a href="https://homarr.home" class="header-logo-link">
+    <header>
+      <a class="header-main" href="/">
         <img
-          class="header-logo"
-          src="{{ url_for('static', filename='/images/henristr.png') }}"
-          alt="img"
-          height="20px"
+          src="{{ url_for('static', filename='images/henristr.png') }}"
+          alt="hstr-img"
+          id="hstr-img"
         />
+        <h3 id="header-title">Henri Stricker</h3>
       </a>
-      <a href="/" class="header-name">
-        <span>Henri Stricker</span>
-      </a>
-      <div class="header-links">
-        <a href="/">Home</a>
-        <span>|</span>
+      <span class="links">
         <a href="/projects">Projects</a>
         <span>|</span>
         <a href="/socials">Social</a>
-      </div>
-    </div>
-    <div class="main-title">
-      <h1 class="main-title-social">Social</h1>
-    </div>
-    <div class="social-github">
-      <a href="https://github.com/henristr">
-        <h1 class="social-title-git">Git</h1>
-        <h1 class="social-title-hub">Hub</h1>
-      </a>
-      <p class="social-github-description">henristr - GitHub</p>
-    </div>
-    <div class="social-insta">
-      <a href="https://instagram.com/henristr__">
-        <h1 class="social-title-insta social-title-insta-fade">Insta</h1>
-        <h1 class="social-title-gram social-title-insta-fade">gram</h1>
-      </a>
-      <p class="social-insta-description social-title-insta-fade">
-        henristr__ - Instagram
-      </p>
-    </div>
-    <div class="social-codeberg">
-      <a href="https://codeberg.org/henristr">
-        <h1 class="social-title-code">Code</h1>
-        <h1 class="social-title-berg">Berg</h1>
-      </a>
-      <p class="social-codeberg-description">henristr - Codeberg</p>
-    </div>
-    <div class="social-forgejo">
-      <a href="https://git.henristr.de/henristr">
-        <h1 class="social-title-forgejo">Forgejo</h1>
-        <h1 class="social-title-server">Server</h1>
-      </a>
-      <p class="social-forgejo-description">henristr - Forgejo</p>
-    </div>
+        <span>|</span>
+        <a href="/github">GitHub</a>
+      </span>
+    </header>
+    <main>
+      <h1 id="title">Henri Stricker</h1>
+    </main>
+    <footer>&copy; Henri Stricker {{ year }}</footer>
   </body>
 </html>

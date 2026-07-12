@@ -1,197 +1,145 @@
-a {
-  text-decoration: none;
-}
-h1 {
-  font-family: Mirava;
-  font-size: 80px;
-}
-p {
-  font-family: Poppins;
-}
 html {
-  scroll-behavior: smooth;
-}
-.header {
-  color: #40415d;
-  display: flex;
-  font-family: Mirava;
-  font-weight: bold;
-  position: sticky;
-  top: 8px;
-  z-index: 100;
-}
-.header a {
-  color: #55577b;
-  padding: 10px;
-}
-.header-name {
-  color: #40415d;
-  padding: 0px;
-  display: inline-block;
-  margin-left: -10px;
-  margin-top: -9px;
-  margin-right: -8px;
-}
-.header-links {
-  padding-left: 20px;
-}
-.header-logo {
-  position: relative;
-}
-.header-logo-link {
-  display: inline-block;
-  margin-left: -9px;
-  margin-top: -11px;
+  height: 100%;
 }
 body {
-  background-image: url(images/background.svg);
-  background-size: cover;
+  margin: 0;
+  font-family: Roboto;
+  background-color: #121212;
+  color: #e0e0e0;
+  font-size: 1em;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-@media (orientation: portrait) {
-  body {
-    background-image: url(images/background-mobile.svg);
-    background-size: cover;
-  }
-  .header-links {
-    margin-top: 1.75px;
-  }
+a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-size: 1em;
 }
-@media only screen and (max-width: 393px) {
-  .header {
-    font-size: 14px;
-  }
-  .header-links {
-    padding-left: 12px;
-  }
-  .header-logo-link {
-    margin-top: -13px;
-  }
-  h1 {
-    font-size: 70px;
+header {
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+  height: 60px;
+  width: 100%;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #00000000;
+  scrollbar-base-color: #00000000;
+  background-color: #212121;
+  flex-shrink: 0;
+}
+main {
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex: 1;
+}
+footer {
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+  height: 60px;
+  width: 100%;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #00000000;
+  scrollbar-base-color: #00000000;
+  background-color: #212121;
+  flex-shrink: 0;
+}
+.header-main {
+  display: flex;
+  align-items: center;
+}
+.links {
+  font-size: 0.9em;
+  margin-left: 10px;
+}
+.links span {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#title {
+  display: flex;
+  justify-content: center;
+}
+#hstr-img {
+  height: 30px;
+  flex-shrink: 0;
+  cursor: default;
+}
+#header-title {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #89b4ea;
+  cursor: default;
+}
+#smartfridge-img {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+}
+#smartfridge {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 20px;
+  align-items: center;
+}
+.project-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-text a {
+  display: block;
+  text-align: center;
+  background-color: #89b4ea;
+  color: #121212;
+  width: 80px;
+  padding: 10px;
+  border-radius: 18px;
+}
+@media only screen and (max-width: 450px) {
+  #smartfridge {
+    flex-direction: column;
   }
 }
 @font-face {
-  font-family: Nineties;
-  src: url("/static/fonts/NinetiesDisplay.otf");
+  font-family: Roboto;
+  font-weight: 400;
+  src: url(fonts/Roboto-Black.ttf);
 }
 @font-face {
-  font-family: Mirava;
-  src: url("/static/fonts/Mirava-Regular.otf");
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: italic;
+  src: url(fonts/Roboto-Italic.ttf);
 }
 @font-face {
-  font-family: Poppins;
-  src: url("/static/fonts/Poppins-Black.ttf");
+  font-family: Roboto;
+  font-weight: bold;
+  src: url(fonts/Roboto-Bold.ttf);
 }
 @font-face {
-  font-family: Inter;
-  src: url("/static/fonts/Inter_18pt-Black.ttf");
+  font-family: Roboto;
+  font-weight: bold;
+  font-style: italic;
+  src: url(fonts/Roboto-BoldItalic.ttf);
 }
 @font-face {
-  font-family: Inter Bold;
-  src: url("/static/fonts/Inter_18pt-Bold.ttf");
-}
-.main-title {
-  padding-top: 50px;
-  text-align: center;
-  color: #40415d;
-}
-.main-title-stricker {
-  font-family: Nineties;
-  margin-top: -55px;
-}
-.project-smartfridge {
-  padding-top: 50px;
-  font-family: "Open Sans";
-  font-size: 16px;
-  text-align: center;
-  color: #014f86;
-}
-.project-title-smart {
-  color: #014f86;
-}
-.project-title-fridge {
-  font-family: Nineties;
-  margin-top: -55px;
-
-  color: #2c7da0;
-}
-.project-smartfridge-description {
-  margin-top: -35px;
-}
-.social-github {
-  font-family: "Open Sans";
-  font-size: 16px;
-  text-align: center;
-  color: #08872b;
-}
-.social-title-git {
-  color: #101411;
-}
-.social-title-hub {
-  font-family: Nineties;
-  margin-top: -55px;
-  color: #909692;
-}
-.social-github-description {
-  margin-top: -35px;
-}
-.social-insta {
-  font-family: "Open Sans";
-  font-size: 16px;
-  text-align: center;
-  color: #08872b;
-}
-.social-title-insta-fade {
-  background: linear-gradient(
-    90deg,
-    rgba(86, 88, 211, 1) 0%,
-    rgba(149, 40, 189, 1) 25%,
-    rgba(209, 39, 116, 1) 50%,
-    rgba(245, 127, 36, 1) 75%,
-    rgba(251, 219, 122, 1) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.social-title-gram {
-  font-family: Nineties;
-  margin-top: -55px;
-}
-.social-insta-description {
-  margin-top: -35px;
-}
-.social-codeberg {
-  font-family: "Open Sans";
-  font-size: 16px;
-  text-align: center;
-  color: #0b3049;
-}
-.social-title-code {
-  color: #2185d0;
-}
-.social-title-berg {
-  font-family: Nineties;
-  margin-top: -55px;
-  color: #b5ddff;
-}
-.social-codeberg-description {
-  margin-top: -35px;
-}
-.social-forgejo {
-  font-family: "Open Sans";
-  font-size: 16px;
-  text-align: center;
-  color: #0b3049;
-}
-.social-title-forgejo {
-  color: #f97316;
-}
-.social-title-server {
-  font-family: Nineties;
-  margin-top: -55px;
-  color: #d50000;
-}
-.social-forgejo-description {
-  margin-top: -35px;
+  font-family: Roboto;
+  font-weight: 300;
+  src: url(fonts/Roboto-Light.ttf);
 }
