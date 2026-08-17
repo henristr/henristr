@@ -3,36 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Henri Stricker | Socials</title>
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='index.css') }}"
-    />
-    <link
-      rel="shortcut icon"
-      href="{{ url_for('static', filename='favicon.ico') }}"
-    />
+    <title>Henri Stricker | Projects</title>
+    <link rel="stylesheet" href="/static/index.css" />
+    <link rel="shortcut icon" href="/static/favicon.ico" />
   </head>
   <body>
     <header>
       <a class="header-main" href="/">
-        <img
-          src="{{ url_for('static', filename='images/henristr.png') }}"
-          alt="hstr-img"
-          id="hstr-img"
-        />
+        <img src="/static/images/henristr.png" alt="hstr-img" id="hstr-img" />
         <h3 id="header-title">Henri Stricker</h3>
       </a>
       <span class="links">
-        <a href="/projects">Projects</a>
+        <a href="/projects.html">Projects</a>
         <span>|</span>
-        <a href="/socials">Social</a>
+        <a href="/socials.html">Social</a>
         <span>|</span>
-        <a href="/github">GitHub</a>
+        <a href="https://github.com/henristr">GitHub</a>
       </span>
     </header>
     <main>
-      <h1 id="title">Henri Stricker</h1>
+      <div id="smartfridge">
+        <div class="project-text">
+          <h1 id="title">SmartFridge</h1>
+          <a href="https://opensmartfridge.de">Try it out!</a>
+        </div>
+        <img src="/static/images/smartfridge.png" alt="" id="smartfridge-img" />
+      </div>
       <button id="themeBtn">
         <svg
           fill="#ffffff"
@@ -77,7 +73,7 @@
         </svg>
       </button>
     </main>
-    <footer>&copy; {{ year }} Henri Stricker</footer>
-    <script src="{{ url_for('static', filename='index.js') }}"></script>
+    <footer>&copy;&nbsp;<span id="year"></span>&nbsp;Henri Stricker</footer>
+    <script src="/static/index.js"></script>
   </body>
 </html>

@@ -10,3 +10,5 @@ themeBtn.addEventListener("click", () => {
   root.setAttribute("data-theme", next);
   localStorage.setItem("theme", next);
 });
+
+document.getElementById("year").textContent = new Date().getFullYear();
